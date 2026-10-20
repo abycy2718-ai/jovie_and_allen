@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="Jovie & Allen — a little collection of our favorite moments.">
+  <title>Jovie & Allen — All the little things</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23613745'/%3E%3Cpath d='M32 47 15 31C3 17 23 10 32 23 41 10 61 17 49 31Z' fill='%23f7f4ec'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Reusable icons: all local, with no icon library or external font requests. -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="m12 20-8.1-7.6C-2 6.5 6.1-.6 12 6c5.9-6.6 14 0.5 8.1 6.4Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10Z"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M3 5h3c5 0 7 14 12 14h3m-4-4 4 4-4 4M3 19h3c1.6 0 3-1.5 4.3-3.7M14 8.7C15.3 6.5 16.5 5 18 5h3m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2c0 7-3 10-10 10 7 0 10 3 10 10 0-7 3-10 10-10-7 0-10-3-10-10Z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#albums">Skip to the albums</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a class="brand" href="#top" aria-label="Jovie and Allen, home">j<span class="brand-plus">+</span>a<span class="brand-dot">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#albums">The albums</a>
+        <a href="#little-note">A little note</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-label">A STORY STILL UNFOLDING</span>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to evening theme" title="Switch to evening theme">
+          <svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="tiny-line"></span> JOVIE & ALLEN</p>
+        <h1 id="hero-title">You. Me.<br>All the <em>little things.</em></h1>
+        <p class="hero-description">Our favorite faces. Our ordinary days.<br>A little place to keep it all, together.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#albums">Open our albums <svg class="icon" aria-hidden="true"><use href="#i-diagonal"/></svg></a>
+          <button class="button button-text" id="surprise-button" type="button"><svg class="icon" aria-hidden="true"><use href="#i-shuffle"/></svg> Surprise me</button>
+        </div>
+        <p class="hero-footnote"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Three albums. One shared story.</p>
+      </div>
+
+      <div class="hero-collage" aria-label="A peek inside our three albums">
+        <svg class="collage-orbit" viewBox="0 0 540 530" fill="none" aria-hidden="true"><ellipse cx="270" cy="270" rx="238" ry="223" stroke="currentColor" stroke-width="1" stroke-dasharray="3 8"/><path d="M412 58c34-24 66 4 34 27-37 27-19 30-19 30" stroke="currentColor" stroke-width="1.5"/></svg>
+        <svg class="doodle doodle-star" aria-hidden="true"><use href="#i-star"/></svg>
+        <span class="collage-note" aria-hidden="true">little moments,<br>big feelings.</span>
+        <button class="polaroid polaroid-jovie" data-cover="jovie" type="button" aria-label="Open Jovie's first photo">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="photos/jovie/01.svg" alt="Illustrated tulips in a vase; a placeholder for Jovie's photo" width="900" height="1100" fetchpriority="high">
+          <span class="polaroid-label">Jovie <span class="polaroid-number">01</span></span>
+        </button>
+        <button class="polaroid polaroid-allen" data-cover="allen" type="button" aria-label="Open Allen's first photo">
+          <img src="photos/allen/01.svg" alt="Illustrated mountain landscape; a placeholder for Allen's photo" width="900" height="1100">
+          <span class="polaroid-label"><span class="polaroid-number">02</span> Allen</span>
+        </button>
+        <button class="polaroid polaroid-together" data-cover="together" type="button" aria-label="Open the first Together photo">
+          <span class="tape" aria-hidden="true"></span>
+          <img src="photos/together/01.svg" alt="Illustrated coffee for two; a placeholder for a photo together" width="900" height="1100">
+          <span class="polaroid-label">better together <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+        </button>
+        <span class="collage-caption" aria-hidden="true">a collection of us</span>
+      </div>
+    </section>
+
+    <div class="chapter-strip container" aria-hidden="true">
+      <span>THE BIG DAYS</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>THE SLOW DAYS</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>THE JUST-BECAUSE DAYS</span><svg class="icon"><use href="#i-star"/></svg>
+      <span>YOU & ME</span>
+    </div>
+
+    <section class="albums-section container" id="albums" aria-labelledby="albums-title">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">THE MEMORY SHELF</p><h2 id="albums-title">The moments <em>we keep.</em></h2></div>
+        <p class="section-description">A few favorites from her world, his world,<br>and the one we’re making together.</p>
+      </div>
+      <div class="gallery-toolbar">
+        <div class="album-filters" role="group" aria-label="Filter photo albums">
+          <button class="filter-button is-active" data-filter="all" aria-pressed="true" type="button">All moments <span data-filter-count="all">9</span></button>
+          <button class="filter-button" data-filter="jovie" aria-pressed="false" type="button">Jovie <span data-filter-count="jovie">3</span></button>
+          <button class="filter-button" data-filter="allen" aria-pressed="false" type="button">Allen <span data-filter-count="allen">3</span></button>
+          <button class="filter-button" data-filter="together" aria-pressed="false" type="button">Together <span data-filter-count="together">3</span></button>
+          <button class="filter-button filter-saved" data-filter="saved" aria-pressed="false" type="button" title="Favorites are saved only in this browser"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg> Saved <span data-filter-count="saved">0</span></button>
+        </div>
+        <span class="view-hint"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg> Click a photo to linger</span>
+      </div>
+      <p class="demo-notice" id="demo-notice">A little preview: these are illustrations, ready for your own photographs.</p>
+      <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+      <noscript><p class="empty-state">Please enable JavaScript to browse the albums and open photos. The photo files are also in the <code>photos/</code> folder.</p></noscript>
+
+      <section class="album" id="jovie" data-album="jovie" aria-labelledby="jovie-title">
+        <div class="album-heading"><div class="album-name"><span class="album-number">01</span><h3 id="jovie-title">Jovie</h3><span class="album-rule"></span></div><p>The little things that make her, her.</p><span class="album-count" data-album-count="jovie">03 MOMENTS</span></div>
+        <div class="photo-grid" id="jovie-grid"></div>
+      </section>
+      <section class="album" id="allen" data-album="allen" aria-labelledby="allen-title">
+        <div class="album-heading"><div class="album-name"><span class="album-number">02</span><h3 id="allen-title">Allen</h3><span class="album-rule"></span></div><p>A world of his own. A part of ours.</p><span class="album-count" data-album-count="allen">03 MOMENTS</span></div>
+        <div class="photo-grid" id="allen-grid"></div>
+      </section>
+      <section class="album" id="together" data-album="together" aria-labelledby="together-title">
+        <div class="album-heading"><div class="album-name"><span class="album-number">03</span><h3 id="together-title">Together</h3><span class="album-rule"></span></div><p>My favorite place is next to you.</p><span class="album-count" data-album-count="together">03 MOMENTS</span></div>
+        <div class="photo-grid" id="together-grid"></div>
+      </section>
+      <div class="empty-state" id="empty-state" hidden><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><h3 id="empty-title">Your favorites live here.</h3><p id="empty-message">Tap the heart on a photo to keep it close. Saved photos stay in this browser.</p><button class="button button-outline" id="show-all-button" type="button">Back to all moments <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+    </section>
+
+    <section class="note-section container reveal" id="little-note" aria-labelledby="note-title">
+      <div class="note-card">
+        <div class="note-copy"><p class="eyebrow">FOR ALL THE CHAPTERS AHEAD</p><h2 id="note-title">Here’s to more<br>ordinary days <em>with you.</em></h2><p>Some things are worth keeping.<br>Some people feel like home.</p></div>
+        <div class="note-interaction">
+          <button class="envelope" id="note-toggle" type="button" aria-expanded="false" aria-controls="love-note" aria-label="Open our little note">
+            <span class="envelope-back"></span><span class="envelope-letter" aria-hidden="true">you + me</span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="envelope-seal"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></span>
+          </button>
+          <span class="envelope-instruction" id="note-instruction">a little note for us — tap to open</span>
+          <div class="love-note" id="love-note" hidden><p id="note-text">Of all the places we’ll go, and all the things we’ll become, I hope we always make time for this: a slow day, a small adventure, and each other.</p><span>Jovie + Allen</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-signature"><span class="brand" aria-hidden="true">j<span class="brand-plus">+</span>a<span class="brand-dot">.</span></span><span>Made of little moments.<br><span class="footer-small">Jovie & Allen · <span id="year"></span></span></span></div>
+    <div class="footer-actions"><button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#i-pause"/></svg><span>Pause animations</span></button><a href="#top">Back to the beginning <span aria-hidden="true">↑</span></a></div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title" aria-describedby="lightbox-caption">
+    <div class="lightbox-shell">
+      <header class="lightbox-header"><p class="eyebrow"><span id="lightbox-album">Together</span><span class="lightbox-separator">/</span><span id="lightbox-counter">1 of 3</span></p><button class="icon-button" id="lightbox-close" type="button" aria-label="Close photo viewer" autofocus><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></header>
+      <div class="lightbox-stage"><button class="icon-button lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous photo"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><div class="lightbox-image-wrap"><img class="lightbox-image" id="lightbox-image" alt="" width="900" height="1100"></div><button class="icon-button lightbox-next" id="lightbox-next" type="button" aria-label="Next photo"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+      <footer class="lightbox-footer"><div><p class="lightbox-meta" id="lightbox-meta"></p><h2 id="lightbox-title">A little moment</h2><p id="lightbox-caption"></p></div><button class="lightbox-save" id="lightbox-save" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span>Save</span></button></footer>
+      <p class="lightbox-hint">← → to explore <span>·</span> swipe on mobile <span>·</span> Esc to close</p>
+      <p class="sr-only" id="lightbox-status" role="status" aria-live="polite"></p>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="heart-particles" id="heart-particles" aria-hidden="true"></div>
+</body>
+</html>

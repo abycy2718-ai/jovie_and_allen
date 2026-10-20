@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100">
+<defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter></defs>
+<rect width="900" height="1100" fill="#efe4cf"/><rect x="0" width="90" height="1100" fill="#c7bda3" opacity=".19"/><rect x="180" width="90" height="1100" fill="#c7bda3" opacity=".19"/><rect x="360" width="90" height="1100" fill="#c7bda3" opacity=".19"/><rect x="540" width="90" height="1100" fill="#c7bda3" opacity=".19"/><rect x="720" width="90" height="1100" fill="#c7bda3" opacity=".19"/><rect x="900" width="90" height="1100" fill="#c7bda3" opacity=".19"/><rect y="0" width="900" height="90" fill="#c7bda3" opacity=".19"/><rect y="180" width="900" height="90" fill="#c7bda3" opacity=".19"/><rect y="360" width="900" height="90" fill="#c7bda3" opacity=".19"/><rect y="540" width="900" height="90" fill="#c7bda3" opacity=".19"/><rect y="720" width="900" height="90" fill="#c7bda3" opacity=".19"/><rect y="900" width="900" height="90" fill="#c7bda3" opacity=".19"/><rect y="1080" width="900" height="90" fill="#c7bda3" opacity=".19"/><ellipse cx="458" cy="773" rx="246" ry="118" fill="#a89b7e25"/>
+<path d="M329 662Q480 457 487 276M587 705Q649 438 487 276" fill="none" stroke="#667555" stroke-width="14" stroke-linecap="round"/>
+<path d="M485 286Q608 167 701 230 636 320 485 286Z" fill="#7f8b62"/>
+<path d="M490 279q133-58 185-46" fill="none" stroke="#596e4e" stroke-width="3"/>
+<path d="M306 587c-170 2-194 257-12 292 130 39 204-176 89-264-30-22-42-2-77-28Z" fill="#a24f58"/>
+<path d="M306 587c-91 16-127 180-52 242-114-50-102-238 52-242Z" fill="#bc6970"/>
+<path d="M313 849c87 7 136-104 115-174 59 130-50 240-115 174Z" fill="#813e49"/>
+<path d="M559 655c-162-16-191 215-32 257 171 30 206-170 111-230-34-29-60 0-79-27Z" fill="#ba5b60"/>
+<path d="M527 672c-58 25-71 92-51 126" fill="none" stroke="#db9290" stroke-width="18" stroke-linecap="round"/>
+<path d="M282 628c-48 20-67 83-50 117" fill="none" stroke="#d89594" stroke-width="17" stroke-linecap="round"/>
+<path d="M555 883c96 27 155-78 111-158 99 127-50 237-111 158Z" fill="#9e414e"/>
+<path d="M682 949q21-30 44-5-25 26-44 5Z" fill="#919c73"/>
+<rect width="900" height="1100" filter="url(#grain)" opacity=".055" style="mix-blend-mode:multiply"/>
+</svg>

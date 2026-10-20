@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100">
+<defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><g id="cup"><ellipse cx="15" cy="33" rx="161" ry="153" fill="#744d4230"/><circle r="153" fill="#e6d5bc"/><circle r="135" fill="none" stroke="#c3ad8c" stroke-width="3"/><path d="M101-42h51q60 0 60 55t-60 55h-51V39h43q28 0 28-25t-28-25h-43Z" fill="#f7ead4"/><circle r="110" fill="#fff0d8"/><circle r="87" fill="#704b3c"/><circle cy="-2" r="76" fill="#8e5d41"/><path d="M-48-48q52-43 98 1" stroke="#cfa87c" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-28 15c-33-32 12-53 28-23 21-30 65-10 31 23L1 42Z" fill="#e9c89b"/></g>
+<g id="daisy"><g fill="#f4e6c8"><ellipse cy="-25" rx="13" ry="29"/><ellipse cy="-25" rx="13" ry="29" transform="rotate(60)"/><ellipse cy="-25" rx="13" ry="29" transform="rotate(120)"/><ellipse cy="-25" rx="13" ry="29" transform="rotate(180)"/><ellipse cy="-25" rx="13" ry="29" transform="rotate(240)"/><ellipse cy="-25" rx="13" ry="29" transform="rotate(300)"/></g><circle r="15" fill="#c59b4e"/></g></defs>
+<rect width="900" height="1100" fill="#c28c79"/><path d="M611 0H900V1100H205Z" fill="#dfaa92"/><path d="M716 0h55L365 1100h-55Z" fill="#efc5a670"/>
+<path d="M-22 723 298 854 206 1100H-22Z" fill="#ece0c7"/><path d="M0 791 263 895M0 850l244 98M0 909l223 93M0 968l202 87" stroke="#c8b59b" stroke-width="3"/>
+<use href="#cup" transform="translate(298 366) rotate(-37)"/>
+<use href="#cup" transform="translate(570 712) rotate(25) scale(1.03)"/>
+<path d="M49 1100q70-299 134-416M67 1008q-2-156-24-193M109 880q128-90 146-162" stroke="#708063" stroke-width="7" fill="none"/>
+<path d="M90 952q-53-69-40-108 48 15 40 108Z" fill="#7f8c67"/><path d="M126 908q100-55 122-34-45 60-122 34Z" fill="#8f9b76"/>
+<use href="#daisy" transform="translate(181 685) rotate(14) scale(.94)"/><use href="#daisy" transform="translate(44 806) rotate(-7) scale(.7)"/><use href="#daisy" transform="translate(256 716) rotate(24) scale(.62)"/>
+<g transform="translate(600 357) rotate(31)"><rect x="-8" y="-80" width="16" height="181" rx="8" fill="#cfb393"/><ellipse cy="-94" rx="24" ry="38" fill="#ddc2a0"/><ellipse cx="-3" cy="-97" rx="14" ry="28" fill="#b58f71"/></g>
+<rect width="900" height="1100" filter="url(#grain)" opacity=".055" style="mix-blend-mode:multiply"/>
+</svg>
